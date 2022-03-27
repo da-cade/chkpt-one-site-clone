@@ -1,0 +1,279 @@
+
+:root{ 
+  --accent: #f7c1de;
+  --light-green: #D5E1CC;
+  --text-dark: #253719;
+  --gen-dark: #2B4523;
+  --gen-green: #4A6733;
+  --gen-medium: #6E8A43;
+  --gen-light: #97AF52;
+  --gen-yellow: #ffff95;
+  --gen-beige: #FFFBCE;
+  --skip-dark: #2B4523;
+  --nat-dark: #2B4523;
+  --nat-green: #54A241;
+  --nat-mint: #F1FDEB;
+  --nat-light: #f6fcf3;
+  --nat-yellow: #FFFBCE;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif; 
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif; 
+}
+
+h4{
+  font-family: 'Montserrat', sans-serif; 
+}
+
+h5{
+  font-family: 'Montserrat', sans-serif; 
+}
+
+h6{
+  font-family: 'Montserrat', sans-serif; 
+}
+
+p{
+  font-size: small;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+i{
+  color: #e05ea6;
+
+}
+
+@font-face {
+  font-family: 'bombing';
+  src: url('../../../resources/Bombing.ttf');
+}
+
+a{
+  font-family: "bombing";
+}
+
+.monkey-logo{
+  background-image: url("../../../resources/monkey.png");
+  width: 40px;
+  height: 40px;
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat:no-repeat;
+}
+
+.navbar-styling{
+  background-color: var(--gen-yellow);
+  padding-top: 0rem!important;
+  padding-bottom: 0rem!important;
+}
+
+.header-light{
+  color: var(--skip-dark);
+  font-weight: bolder;
+}
+
+.contact-card{
+  display: flex;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px #5e665a;
+  padding: 7px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: var(--nat-mint);
+  width: 35vh;
+  align-items: stretch;
+}
+
+.intro-text{
+  color: #E5E5E5;
+  font-weight:300;
+}
+
+.green-text{
+  color: var(--skip-dark)
+}
+
+input{
+  background-color: var(--nat-light);
+  border-radius: 1px;
+  border-style: none;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--gen-dark);
+  border-left: 1px solid var(--gen-dark);
+  resize: both;
+  height: auto;
+  width: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: small;
+}
+
+
+#phone-box{
+  margin-right: 1vw;
+  width: 70%;
+}
+
+#ext-box{
+  margin-left: 0vw;
+  width: 25%;
+} 
+
+#fruitcheck{
+  background-color: var(--text-dark);
+  width: 1vw;
+  box-shadow: none;
+}
+
+#grievance{
+  border-left: 1px solid var(--gen-dark);
+  border-bottom: 1px solid var(--gen-dark);
+  height: 12vh;
+}
+
+.card-button{
+  color: var(--nat-light);
+  background-color: var(--gen-medium);
+  border-color: var(--gen-medium);
+}
+
+.width{
+  width: 50%;
+}
+
+.height{
+  overflow:auto;
+}
+
+.toolbox-parent{
+  position: relative;
+  /* width: 100vw; */
+}
+
+.toolstyle>p{
+  color: #0015d3;
+}
+
+.toolbox-float{
+  float: inline-end;
+  position: absolute;
+  top: 5vh;
+  right: 7vw;
+  background-color: var(--gen-beige);
+  /* background-color: #ffffa4; */
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #afaf7c;
+  padding: 1rem;
+}
+
+.true-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.disapparate{
+  color: var(--secondary);
+}
+
+.masthead-img{
+  height: 70vh;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/758/587/large_2x/jungle-silhouette-banner-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accent-bar{
+  height: 3.5rem;
+  width: 5px;
+  align-self: center;
+  background-color: var(--nat-mint);
+  flex-direction: column;
+}
+
+.bg-bio{
+  background-color: var(--gen-green);
+}
+
+.bg-sec{
+  background-image: url("../../../resources/foliage-nejufl1801-b.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;
+}
+.bg-adline{
+  background-color: var(--nat-light);
+}
+
+.bg-chimp{
+  background-image: url(https://media.istockphoto.com/photos/very-surprised-female-gorilla-opened-her-mouth-picture-id1173750471?k=20&m=1173750471&s=612x612&w=0&h=69N-UUCOuRlwrJPta2iNSC3lpyV7lPAAwJ_MZtI3KWE=);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 40vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.more-btn{
+  width: 20%;
+  align-self: flex-end;
+}
+
+
+.review-card{
+  border-radius: 3px;
+  font-size: 12pt;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gen-beige);
+  box-shadow: 1px 1px 5px #5e665a;
+  transform: translateZ(0);
+  transition: .25s ease-in-out;
+  
+}
+
+.review-card:hover{
+  font-size: 16pt;
+  background-color: var(ivory);
+  transform: scale(1.1);
+}
+
+.foot-style{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+
+@media only screen and (max-width: 768px){
+  .disapparate{
+    content-visibility: hidden;
+  }
+  .toolbox-float{
+    position: inherit;
+    float: none;
+    top: 0vh;
+    right: 0vw;
+  }
+  .masthead-img{
+    height: 45vh;
+  }
+  .foot-style{
+    flex-direction: column;
+  }
+  .width{
+    width: auto;
+  }
+  .monkey-logo{
+    margin-top: 0rem!important;
+  }
+}
+
