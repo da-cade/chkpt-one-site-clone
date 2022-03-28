@@ -321,7 +321,7 @@ input{
     right: 0vw;
   }
   .masthead-img{
-    height: 45vh;
+    height: fit-content;
   }
   .foot-style{
     flex-direction: column;
