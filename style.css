@@ -1,11 +1,15 @@
 
 :root{ 
-  --accent: #f7c1de;
+  --gen-green: #203f34;
+  --gen-medium: #48a070;
+  --teal: #80c7b2;
+  --off-light: #d1e3cc;
+
+
+  --accent: rgb(247, 193, 222);
   --light-green: #D5E1CC;
   --text-dark: #253719;
   --gen-dark: #2B4523;
-  --gen-green: #4A6733;
-  --gen-medium: #6E8A43;
   --gen-light: #97AF52;
   --gen-yellow: #ffff95;
   --gen-beige: #FFFBCE;
@@ -15,6 +19,10 @@
   --nat-mint: #F1FDEB;
   --nat-light: #f6fcf3;
   --nat-yellow: #FFFBCE;
+}
+
+h1{
+  margin-top: .5rem;
 }
 
 h2{
@@ -38,26 +46,38 @@ h6{
 }
 
 p{
-  font-size: small;
   font-family: 'Josefin Sans', sans-serif;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 i{
   color: #e05ea6;
-
-}
-
-@font-face {
-  font-family: 'bombing';
-  src: url('../../../resources/Bombing.ttf');
 }
 
 a{
   font-family: "bombing";
 }
 
+@font-face {
+  font-family: 'bombing';
+  src: url('../resources/Bombing.ttf');
+}
+
+.opaque{
+  opacity: 4;
+}
+
+.banana{
+  background-image: url("../resources/banana.png");
+  width: 17px;
+  height: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .monkey-logo{
-  background-image: url("../../../resources/monkey.png");
+  background-image: url("../resources/monkey.png");
   width: 40px;
   height: 40px;
   /* background-position: center; */
@@ -66,7 +86,7 @@ a{
 }
 
 .navbar-styling{
-  background-color: var(--gen-yellow);
+  background-image: linear-gradient(to right, var(--teal), var(--nat-mint));
   padding-top: 0rem!important;
   padding-bottom: 0rem!important;
 }
@@ -84,8 +104,6 @@ a{
   flex-wrap: nowrap;
   flex-direction: column;
   background-color: var(--nat-mint);
-  width: 35vh;
-  align-items: stretch;
 }
 
 .intro-text{
@@ -93,8 +111,12 @@ a{
   font-weight:300;
 }
 
+.off-light{
+  color: var(--off-light)
+}
+
 .green-text{
-  color: var(--skip-dark)
+  color: var(--gen-green)
 }
 
 input{
@@ -125,7 +147,6 @@ input{
 
 #fruitcheck{
   background-color: var(--text-dark);
-  width: 1vw;
   box-shadow: none;
 }
 
@@ -154,8 +175,19 @@ input{
   /* width: 100vw; */
 }
 
+.toolstyle{
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 8px;
+  align-content: center;
+  background-color: var(--nat-light);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 .toolstyle>p{
-  color: #0015d3;
+  color: #664d03;
+  font-size: small;
 }
 
 .toolbox-float{
@@ -163,7 +195,7 @@ input{
   position: absolute;
   top: 5vh;
   right: 7vw;
-  background-color: var(--gen-beige);
+  background-color: var(--nat-yellow);
   /* background-color: #ffffa4; */
   border-radius: 3px;
   box-shadow: 1px 1px 3px #afaf7c;
@@ -181,17 +213,26 @@ input{
 
 .masthead-img{
   height: 70vh;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/001/758/587/large_2x/jungle-silhouette-banner-vector.jpg");
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/001/758/587/large_2x/jungle-silhouette-banner-vector.jpg"); */
+  background-image: url("https://wallpaperaccess.com/full/2081930.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 23% ;
 }
 
 .accent-bar{
-  height: 3.5rem;
+  height: 5rem;
   width: 5px;
   align-self: center;
   background-color: var(--nat-mint);
   flex-direction: column;
+  margin: 10px;
+}
+
+.card-bar{
+  background-color: var(--accent);
+  height: 2.5rem;
+
 }
 
 .bg-bio{
@@ -199,7 +240,7 @@ input{
 }
 
 .bg-sec{
-  background-image: url("../../../resources/foliage-nejufl1801-b.jpg");
+  background-image: url("../resources/foliage-nejufl1801-b.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -219,6 +260,20 @@ input{
   margin-bottom: 1rem;
 }
 
+.tempt{
+  color: var(--nat-light);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: var(--gen-green);
+  box-shadow: 1px 1px 5px var(--gen-dark);
+  border-radius: 5px;
+  position: absolute;
+  top: 23rem;
+  left: 8rem;
+  content-visibility: hidden;
+  word-wrap: normal;
+}
 
 .more-btn{
   width: 20%;
@@ -240,12 +295,11 @@ input{
 }
 
 .review-card:hover{
-  font-size: 16pt;
-  background-color: var(ivory);
   transform: scale(1.1);
 }
 
 .foot-style{
+  background-image: linear-gradient(to right, var(--nat-mint), var(--teal));
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between; 
@@ -253,7 +307,10 @@ input{
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 576px){
+  .navbar-styling{
+    background-color: var(--nat-mint);
+  }
   .disapparate{
     content-visibility: hidden;
   }
@@ -275,5 +332,34 @@ input{
   .monkey-logo{
     margin-top: 0rem!important;
   }
+  .foot-style{
+    background-color: var(--nat-mint);
+  }
+  .tempt{
+    content-visibility: visible;
+  }
+  .width{
+    width: auto;
+  }
 }
 
+@media only screen and (min-width: 577px) and (max-width: 780px){
+  .masthead-img{
+    height: fit-content;
+  }
+  .contact-card{
+    margin-bottom: 1rem;
+  }
+  .disapparate{
+    content-visibility: hidden;
+  }
+  .toolbox-float{
+    position: inherit;
+    float: none;
+    top: 0vh;
+    right: 0vw;
+  }
+  .width{
+    width: auto;
+  }
+}

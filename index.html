@@ -18,6 +18,7 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Montserrat:wght@500&family=Nunito:ital@1&display=swap"
     rel="stylesheet">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
+  <script src="https://kit.fontawesome.com/a95f22eba2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -39,10 +40,11 @@
   <header class="container-fluid p-0 sticky-top height">
     <nav class="navbar navbar-light navbar-styling">
       <div class="container-fluid d-flex justify-content-center align-items-center">
-        <a class="navbar-brand mt-1 pb-0" href="#">
-          <div class="d-flex">
-            <h1>ApeMate</h1>
-            <div class="monkey-logo mt-1 ms-2"></div>
+        <a class="navbar-brand m-0 py-0" href="#">
+          <div class="d-flex p-0">
+            <h1>Ape</h1>
+            <div class="monkey-logo my-1"></div>
+            <h1>Mate</h1>
           </div>
         </a>
         <div>
@@ -57,7 +59,7 @@
         <div class="row masthead-img">
           <div class="col-md-4 d-flex flex-column align-items-center">
             <div class="">
-              <p class="d-flex align-self-baseline green-text m-0 mt-3" style="font-weight: bold">Contact Form</p>
+              <p class="d-flex align-self-baseline off-light m-0 mt-3" style="font-weight: bold">Contact Form</p>
               <div class="contact-card">
                 <h6 class="header-light mt-2 ms-2">Take the First Step</h6>
                 <!-- //TODO - Format placeholder text -->
@@ -83,9 +85,11 @@
             <div class="d-flex mt-5">
               <div class="accent-bar mb-2 me-3"></div>
               <!-- //TODO - Time permits, put glass card effect on text here -->
-              <div class="d-flex flex-column justify-content-center green-text">
+              <div class="d-flex flex-column justify-content-center text-light">
                 <h2>Your Match is <em>Out There</em></h2>
-                <p>Most don't know it, but for every personality, no matter how maladjusted, <br> there is a <strong>simian</strong> whose wholesome ways can soothe your woes.</p>
+                <div class="card p-1 opacity-100 green-text">
+                  <p>You may not believe it — you may think you're evolved — but our patented algorithm can prove that somewhere there is a <strong>simian</strong> that matches you. We can find them for you</p>
+                </div>
               </div>
             </div>
           </div>
@@ -99,30 +103,30 @@
           <div class="col-md-6 p-0">
             <div class="toolbox-float">
               <div class="d-flex toolstyle">
-                <i class="mdi mdi-fruit-citrus"></i>
-                <p class="pt-1 ms-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <i class="mdi mdi-abacus"></i>
+                <p class="pt-1 ms-1">Make fewer calculations. Think less</p>
               </div>
               <div class="d-flex toolstyle">
-                <i class="mdi mdi-fruit-pineapple"></i>
-                <p class="pt-1 ms-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <i class="banana mt-1"></i>
+                <p class="pt-1 ms-1">Find inspiration in diet and exercise</p>
               </div>
               <div class="d-flex toolstyle">
                 <i class="mdi mdi-fruit-watermelon"></i>
-                <p class="pt-1 ms-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="pt-1 ms-1">Shrug off your human concerns. Civilzation doesn't need you</p>
               </div>
               <div class="d-flex toolstyle">
                 <i class="mdi mdi-fruit-cherries"></i>
-                <p class="pt-1 ms-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="pt-1 ms-1">Learn to love again — and the basis of your near-animal rage!</p>
               </div>
               <div class="d-flex toolstyle">
-                <i class="mdi mdi-fruit-grapes"></i>
-                <p class="pt-1 ms-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <i class="fa-solid fa-poo-storm mt-1"></i>
+                <p class="pt-1 ms-1">Empower yourself. Defecate gloriously</p>
               </div>
             </div>
           </div>
           <div class="col-md-12">
             <div class="width mt-1 p-3">
-              <h6>Goo goo gaga goaroaoasosoogaalaksnd sassafrass</h6>
+              <h6 class="text-light">Goo goo gaga goaroaoasosoogaalaksnd sassafrass</h6>
               <p class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic rem placeat
                 vero velit! Labore
                 nobis doloremque sint praesentium optio libero ratione vero eaque, inventore impedit. Minima, est
@@ -136,7 +140,12 @@
       <div class="container-fluid">
         <div class="row">
           <div class="d-flex col-md-3 true-center">
-            <div class="bg-chimp"></div>
+            <div class="bg-chimp toolbox-parent">
+              <div class="tempt">
+                <div class="accent-bar card-bar"></div>
+                <p class="me-3">All this could be yours</p>
+              </div>
+            </div>
           </div>
           <!-- //TODO - Margin application -->
           <div class="col-md-9 d-flex flex-column justify-content-center">
@@ -161,7 +170,7 @@
       <div class="container-fluid">
         <div class="row d-flex bg-sec">
           <div class="order-md-2 d-flex col-md-4">
-            <div class="review-card text-center p-4 m-3 my-3">
+            <div class="review-card text-center p-4 pb-3 m-3 mb-2">
               <div class=" d-flex flex-row justify-content-center">
                 <i class="mdi mdi-star mx-1"></i>
                 <i class="mdi mdi-star mx-1"></i>
@@ -195,7 +204,7 @@
           <div class="col">
             <div class="d-flex flex-column pt-3 px-3">
               <h4 class="green-text">Your monkey is waiting</h4>
-              <p class="green-text">Bring to the table win-win survival strategies to ensure proactive
+              <p class="green-text pb-2">Bring to the table win-win survival strategies to ensure proactive
                 domination</p>
             </div>
             <p></p>
